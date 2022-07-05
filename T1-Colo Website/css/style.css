@@ -41,15 +41,12 @@
   background-color: #0000ff;
   border-radius: 9px;
   padding: 1.8rem;
-  /* box-shadow: 0px 8px 24px #6D6DFF; */
   transition: all 0.3s;
 }
 
 .nav-cta:hover,
 .nav-cta:active {
-  background-color: #fff;
-  box-shadow: 0px 8px 24px #fff;
-  color: #6D6DFF;
+  background-color: #0100a7;
 }
 
 /* HERO SECTION */
@@ -86,11 +83,11 @@
   font-size: 1.8rem;
   padding: 2.4rem;
   border-radius: 9px;
-  background-color: #fff;
-  color: #6D6DFF;
+  background-color: #6D6DFF;
+  color: #fff;
   text-decoration: none;
   transition: all 0.4s;
-  border: 3px solid #6D6DFF;
+  border: 3px solid #0000ff;
 }
 
 .hero-btn:hover,
@@ -109,6 +106,14 @@
   padding: 4.8rem 0 9.6rem 0;
 }
 
+.hardware-mega-heading {
+  color: #333;
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 8.4rem;
+  font-weight: 700;
+}
+
 .hardware-heading {
   font-size: 1.2rem;
   color: #6D6DFF;
@@ -117,12 +122,14 @@
 }
 
 .hardware-title {
+  color: #000;
   font-size: 2.2rem;
   font-weight: 700;
   padding-bottom: 1.2rem;
 }
 
 .hardware-description {
+  color: #000;
   font-size: 1.8rem;
   padding-bottom: 2.8rem;
 }
@@ -152,8 +159,27 @@
 }
 
 .hardware-img {
-  width: 35%;
+  width: 75%;
   text-align: center;
+}
+
+.hardware-link:link,
+.hardware-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.2rem;
+  color: #0000ff;
+  padding: 1.8rem;
+  transition: all 0.3s;
+  border: solid 3px #6D6DFF;
+  border-radius: 9px;
+  margin-top: 2.8rem;
+}
+
+.hardware-link:hover,
+.hardware-link:active {
+  color: #fff;
+  background-color: #0000ff;
 }
 
 /* FEATURES SECTION*/
@@ -196,9 +222,163 @@
 }
 
 /* FEATURES KON TIKI */
+.section-kon-tiki {
+  background-color: #fff;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.kon-tiki-heading {
+  font-size: 4.2rem;
+  text-align: center;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.kon-tiki-subheading {
+  margin-bottom: 8.4rem !important;
+}
+
+.kon-tiki-feature-cell {
+  display: flex;
+  flex-direction: row;
+  gap: 2.8rem;
+  align-items: center;
+  margin-bottom: 5.6rem;
+}
+
+.kon-tiki-feature-cell-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.kon-tiki-feature-cell-number {
+  font-size: 5.6rem;
+  color: #6D6DFF;
+}
+
+.kon-tiki-feature-cell-heading {
+  font-size: 2.4rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.kon-tiki-feature-cell-description {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 500;
+}
 
 /* CTA SECTION */
+.section-cta {
+  background-color: #000;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.custom-select {
+  background-color: #0000ff;
+  border-radius: 9px;
+  padding: 4.8rem;
+}
+
+.cta-heading {
+  font-size: 4.8rem;
+  margin-bottom: 7.4rem;
+  text-align: left;
+}
+
+.cta-question {
+  color: #fff;
+  font-size: 2.4rem;  
+}
+
+.cta-checkbox {
+  height: 4.8rem;
+}
+
+select {
+  font-size: 1.8rem;
+  border-radius: 9px;
+  background: #000;
+  border: 0px;
+  padding: 1.2rem;
+  color: #fff;
+  min-width: 15em;
+}
+
+option:hover {
+  background: #fff
+}
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #000;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #000;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #000;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.date-picker {
+  background: #000;
+  color: #fff;
+  border: 0;
+  padding: 1.2rem;
+}
 
 /* CTA DROP DOWN */
+
 
 /* CTA DETAILS */

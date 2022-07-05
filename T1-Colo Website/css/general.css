@@ -96,6 +96,10 @@ body {
   margin: 0 auto;
 }
 
+.container--container-cta {
+  background-color: #fff !important;
+}
+
 .grid {
   display: grid;
   column-gap: 6.4rem;
